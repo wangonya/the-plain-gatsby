@@ -1,5 +1,4 @@
 ---
-path: /blog/hello-world
 title: Hello World
 date: 2018-12-29
 ---
