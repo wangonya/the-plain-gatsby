@@ -8,13 +8,14 @@ const PostTemplate = ({ data }) => {
   const { frontmatter, html } = markdownRemark
   return (
     <DefaultLayout>
-      <section>
-        <div>
+      <article>
+        <div className="center">
           <h1>{frontmatter.title}</h1>
           <span>{frontmatter.date}</span>
         </div>
+        <div className="divider" />
         <div dangerouslySetInnerHTML={{ __html: html }} />
-      </section>
+      </article>
     </DefaultLayout>
   )
 }
