@@ -9,7 +9,9 @@ const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
   const postsList = posts.map(post => (
     <li key={post.node.id}>
-      <div className="post-date code">{post.node.frontmatter.date}</div>
+      <div className="post-date code">
+        <small>{post.node.frontmatter.date}</small>
+      </div>
       <div className="title">
         <Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link>
       </div>
