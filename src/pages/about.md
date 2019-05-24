@@ -1,16 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
+---
+title: About
+---
+Hello.
 
-import DefaultLayout from "../layouts/default"
-import SEO from "../components/seo"
+This will be your About page. Anything about you, it should be written here in details. You may describe your bio here like who you are, what you do, your intention, social site hyperlinks and how people can contact you, etc.
 
-const SecondPage = () => (
-  <DefaultLayout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </DefaultLayout>
-)
-
-export default SecondPage
+**Less is more..**

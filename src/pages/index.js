@@ -6,7 +6,11 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
+  // all posts without dates are assumed to be drafts or pages
+  // not to be added to postsList
+  const posts = data.allMarkdownRemark.edges.filter(
+    p => p.node.frontmatter.date !== null
+  )
   const postsList = posts.map(post => (
     <li key={post.node.id}>
       <div className="post-date code">
@@ -35,7 +39,6 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
           fields {
             slug
           }
