@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 
 const Footer = ({ siteTitle }) => (
   <div className="footer">
-    <span class="block">
+    <span className="block">
       &copy; {new Date().getFullYear()} {siteTitle}
     </span>
     <span className="block">
       <small>
-        Built with {` `}
+        {` </>`} Powered by {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a> and{` `}
         <a href="https://github.com/wangonya/the-plain-gatsby">
           The Plain Gatsby starter
