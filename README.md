@@ -10,6 +10,8 @@
 
 A simple minimalist Gatsby starter for your blog.
 
+Inspired by [Heiswayi Nrird](https://github.com/heiswayi)'s [the-plain](https://github.com/heiswayi/the-plain).
+
 ![home-page-screenshot](https://i.postimg.cc/7YPxnrJM/Screenshot-2019-05-25-at-18-33-36.png)
 
 ![about-page-screenshot](https://i.postimg.cc/SK9qxyHq/Screenshot-2019-05-25-at-18-34-12.png)
