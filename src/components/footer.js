@@ -10,7 +10,9 @@ const Footer = ({ siteTitle }) => (
       <small>
         Built with {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a> and{` `}
-        <a href="#">The Plain Gatsby starter</a>
+        <a href="https://github.com/wangonya/the-plain-gatsby">
+          The Plain Gatsby starter
+        </a>
       </small>
     </span>
   </div>
