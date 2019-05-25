@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "the-plain-gatsby-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple minimalist starter for your personal blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kinyanjui Wangonya <kwangonya@gmail.com>",
   "dependencies": {
     "gatsby": "^2.5.7",
     "gatsby-image": "^2.1.0",
@@ -27,7 +27,9 @@
     "prettier": "^1.17.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "minimal",
+    "minimalist"
   ],
   "license": "MIT",
   "scripts": {
@@ -40,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/wangonya/the-plain-gatsby"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/wangonya/the-plain-gatsby/issues"
   }
 }
