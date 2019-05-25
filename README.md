@@ -10,11 +10,11 @@
 
 A simple minimalist Gatsby starter for your blog.
 
-![home-page-screenshot](https://ibb.co/tsQTNTz)
+![home-page-screenshot](https://i.postimg.cc/Lh7Km7Tn/Screenshot-2019-05-25-at-18-33-36.png)
 
-![about-page-screenshot](https://ibb.co/1XjJgZL)
+![about-page-screenshot](https://i.postimg.cc/7CqjByxQ/Screenshot-2019-05-25-at-18-34-12.png)
 
-![blog-page-screenshot](https://ibb.co/6gb1WLL)
+![blog-page-screenshot](https://i.postimg.cc/SnFBMMH4/Screenshot-2019-05-25-at-18-34-00.png)
 
 ## Quick Start 🚀
 
