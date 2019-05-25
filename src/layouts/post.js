@@ -2,12 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import DefaultLayout from "../layouts/default"
+import SEO from "../components/seo"
 
 const PostTemplate = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
     <DefaultLayout>
+      <SEO title={frontmatter.title} />
       <article>
         <div className="center">
           <h1 className="title">{frontmatter.title}</h1>
