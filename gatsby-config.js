@@ -1,13 +1,29 @@
 module.exports = {
   siteMetadata: {
     title: `The Plain Gatsby`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@wang0nya`,
+    description: `A simple minimalist starter for your personal blog.`,
+    author: `@wangonya`,
     avatar: `https://avatars0.githubusercontent.com/u/19375569?s=460&v=4`,
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
