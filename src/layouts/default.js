@@ -20,13 +20,14 @@ const DefaultLayout = ({ children }) => (
         site {
           siteMetadata {
             title
+            avatar
           }
         }
       }
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header avatar={data.site.siteMetadata.avatar} />
         <div>
           <main>{children}</main>
         </div>
