@@ -1,12 +1,13 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import DefaultLayout from "../layouts/default"
 import SEO from "../components/seo"
 
-const PostTemplate = ({ data }) => {
+const PostTemplate = ({ data, pageContext }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
+  const { next, prev } = pageContext
   return (
     <DefaultLayout>
       <SEO title={frontmatter.title} />
@@ -20,6 +21,32 @@ const PostTemplate = ({ data }) => {
         <div className="divider" />
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </article>
+      <div className="page-navigation code">
+        {prev && (
+          <Link
+            className="prev"
+            to={prev.fields.slug}
+            title={prev.frontmatter.title}
+          >
+            &lt;&lt;
+          </Link>
+        )}
+        <span> &middot; </span>
+        <Link to="/" className="home" className="home" title="Back Home">
+          {" "}
+          Home{" "}
+        </Link>
+        <span> &middot; </span>
+        {next && (
+          <Link
+            className="next"
+            to={next.fields.slug}
+            title={next.frontmatter.title}
+          >
+            &gt;&gt;
+          </Link>
+        )}
+      </div>
     </DefaultLayout>
   )
 }

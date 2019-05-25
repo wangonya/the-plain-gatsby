@@ -28,9 +28,7 @@ const DefaultLayout = ({ children }) => (
     render={data => (
       <>
         <Header avatar={data.site.siteMetadata.avatar} />
-        <div>
-          <main>{children}</main>
-        </div>
+        <div id="content">{children}</div>
         <Footer siteTitle={data.site.siteMetadata.title} />
       </>
     )}
