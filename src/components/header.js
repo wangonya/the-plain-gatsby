@@ -3,20 +3,22 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Location } from "@reach/router"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ avatar }) => (
   <header className="logo">
     <Location>
       {({ location }) => {
         return location.pathname == "/" ? (
           <div>
             <Link to="/about/">
-              <img src=".././images/gatsby-icon.png" />
+              <img src={avatar} className="logo-avatar" />
             </Link>
             <span className="logo-prompt code">About the Author</span>
           </div>
         ) : (
           <div>
-            <Link to="/" />
+            <Link to="/">
+              <img src={avatar} className="logo-avatar" />
+            </Link>
             <span className="logo-prompt code">Back Home</span>
           </div>
         )
@@ -26,11 +28,11 @@ const Header = ({ siteTitle }) => (
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  avatar: PropTypes.string,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  avatar: ``,
 }
 
 export default Header
