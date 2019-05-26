@@ -48,4 +48,4 @@ Inspired by [Heiswayi Nrird](https://github.com/heiswayi)'s [the-plain](https://
 
     Edit `gatsby.config.js` to update site metadata.
 
-    Add blog posts in markdown in `src/pages/blog/`. Each blog shpould have a `title` and `date` frontmatter. Example blog posts have been provided.
+    Add blog posts in markdown in `src/pages/blog/`. Each blog should have a `title` and `date` frontmatter. Example blog posts have been provided.
