@@ -26,7 +26,7 @@ Inspired by [Heiswayi Nrird](https://github.com/heiswayi)'s [the-plain](https://
 
     ```sh
     # create a new Gatsby site using the-plain-gatsby starter
-    # TODO: add official gatsby starter link when merged
+    gatsby new my-blog https://github.com/wangonya/the-plain-gatsby
     ```
 
 2.  **Start developing.**
@@ -45,7 +45,7 @@ Inspired by [Heiswayi Nrird](https://github.com/heiswayi)'s [the-plain](https://
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
     Open the `my-blog` directory in your code editor of choice and edit `src/pages/about.md`. Save your changes and the browser will update in real time!
-    
+
     Edit `gatsby.config.js` to update site metadata.
-    
+
     Add blog posts in markdown in `src/pages/blog/`. Each blog shpould have a `title` and `date` frontmatter. Example blog posts have been provided.
