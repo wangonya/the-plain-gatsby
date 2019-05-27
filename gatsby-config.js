@@ -32,7 +32,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-feed`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
