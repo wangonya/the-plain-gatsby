@@ -4,6 +4,7 @@ module.exports = {
     description: `A simple minimalist starter for your personal blog.`,
     author: `@wangonya`,
     avatar: `https://avatars0.githubusercontent.com/u/19375569?s=460&v=4`,
+    siteUrl: `https://the-plain-gatsby.netlify.com`,
   },
   plugins: [
     {
@@ -32,6 +33,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-feed`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
