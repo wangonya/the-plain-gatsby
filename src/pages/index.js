@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
   const postsListContainer = groupBy(posts, getDateYear).map(
     ({ year, posts }, i) => (
       <div key={i}>
-        <b>{year}</b>
+        <h4 className="code">{year}</h4>
         {postsList(posts)}
       </div>
     )
@@ -55,7 +55,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMMM DD, YY")
             title
           }
         }
