@@ -25,14 +25,14 @@ const IndexPage = ({ data }) => {
       </li>
     ))
 
-  const postsListContainer = groupBy(posts, getDateYear).map(
-    ({ year, posts }, i) => (
+  const postsListContainer = groupBy(posts, getDateYear)
+    .map(({ year, posts }, i) => (
       <div key={i}>
         <h4 className="code">{year}</h4>
         {postsList(posts)}
       </div>
-    )
-  )
+    ))
+    .reverse()
   return (
     <DefaultLayout>
       <SEO title="Home" />
