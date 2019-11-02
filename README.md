@@ -8,7 +8,7 @@
   The Plain Gatsby
 </h1>
 
-A simple minimalist Gatsby starter for your blog. [Demo](https://the-plain-gatsby.netlify.com/).
+A minimalist Gatsby starter for your blog. [Demo](https://the-plain-gatsby.netlify.com/).
 
 Inspired by [Heiswayi Nrird](https://github.com/heiswayi)'s [the-plain](https://github.com/heiswayi/the-plain).
 
