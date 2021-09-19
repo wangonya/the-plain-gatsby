@@ -13,7 +13,8 @@ body {
   line-height: 20px;
   font-weight: normal;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #333333;
   padding: 20px;
   margin: 0;
@@ -29,9 +30,9 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 1rem;
-    line-height: 1.25;
-    color: #313131;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  color: #313131;
 }
 h1 {
   font-size: 2rem;
@@ -116,7 +117,8 @@ blockquote {
       -moz-border-radius: 50%;
       border-radius: 50%;
     }
-    @media (max-width : 480px) {&:hover + .logo-prompt,
+    @media (max-width: 480px) {
+      &:hover + .logo-prompt,
       &:focus + .logo-prompt {
         display: none !important;
       }
@@ -129,7 +131,7 @@ blockquote {
     padding: 5px;
     border-radius: 3px;
     background: #666;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, 0.5);
     margin-left: 15px;
     color: #fff;
     font-size: 0.8235em;
@@ -142,7 +144,7 @@ blockquote {
       border-width: 5px 5px 5px 0;
       border-style: solid;
       border-color: transparent #666;
-      border-color: transparent rgba(0,0,0,.5);
+      border-color: transparent rgba(0, 0, 0, 0.5);
       position: absolute;
       top: 50%;
       left: -5px;
@@ -233,9 +235,26 @@ article {
   }
   .divider {
     background: #ddd;
-    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
-    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
-    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 255, 255, 0)),
+      color-stop(#ccc),
+      to(rgba(255, 255, 255, 0))
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0),
+      #ccc,
+      rgba(255, 255, 255, 0)
+    );
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      #ccc,
+      rgba(255, 255, 255, 0)
+    );
     height: 1px;
     margin: 2em 0;
   }
@@ -255,7 +274,7 @@ article {
   }
   .footnote {
     border: 0;
-    background-color: #0087BE;
+    background-color: #0087be;
     color: #fff;
     padding-left: 2px;
     padding-right: 2px;
@@ -278,7 +297,7 @@ article {
     }
     .reversefootnote {
       border: 0;
-      color: #0087BE;
+      color: #0087be;
     }
   }
   a:hover {
@@ -324,7 +343,7 @@ article {
 }
 .footer {
   margin-top: 50px;
-  color: #777;
+  color: #333;
   a {
     border: none;
     font-weight: bold;
@@ -362,7 +381,8 @@ section {
         letter-spacing: 1px;
         text-transform: uppercase;
       }
-      @media (min-width: 992px) {a {
+      @media (min-width: 992px) {
+        a {
           border-bottom: 2px solid transparent;
           &:hover {
             border-color: #000;
@@ -372,33 +392,35 @@ section {
     }
   }
 }
-@keyframes bounce {0% {
-    transform: translate3d( 0, -1000px, 0 );
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, -1000px, 0);
   }
   60% {
-    transform: translate3d( 0, 25px, 0 );
+    transform: translate3d(0, 25px, 0);
   }
   75% {
-    transform: translate3d( 0, -10px, 0 );
+    transform: translate3d(0, -10px, 0);
   }
   90% {
-    transform: translate3d( 0, 5px, 0 );
+    transform: translate3d(0, 5px, 0);
   }
   100% {
     transform: none;
   }
 }
-@-webkit-keyframes bounce {0% {
-    -webkit-transform: translate3d( 0, -1000px, 0 );
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(0, -1000px, 0);
   }
   60% {
-    -webkit-transform: translate3d( 0, 25px, 0 );
+    -webkit-transform: translate3d(0, 25px, 0);
   }
   75% {
-    -webkit-transform: translate3d( 0, -10px, 0 );
+    -webkit-transform: translate3d(0, -10px, 0);
   }
   90% {
-    -webkit-transform: translate3d( 0, 5px, 0 );
+    -webkit-transform: translate3d(0, 5px, 0);
   }
   100% {
     -webkit-transform: none;
